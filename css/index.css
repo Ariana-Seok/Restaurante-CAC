@@ -2,7 +2,7 @@ body{
     margin: none !important;
 }
 
-nav {
+.nav-restaurante {
     padding: 10px;
     text-align: center;
     display: flex;
