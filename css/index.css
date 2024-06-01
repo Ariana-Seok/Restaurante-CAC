@@ -1,0 +1,31 @@
+body{
+    margin: none !important;
+}
+
+nav {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img,
+nav ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+nav ul {
+    margin: 0 10px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+nav li a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul li {
+    display: inline; 
+    margin-right: 10px; 
+}
