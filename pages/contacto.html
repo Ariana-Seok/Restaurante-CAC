@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <title>Restaurante</title>
+</head>
+<body>
+    <nav class="nav-restaurante navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand">
+                <img src="/img/Logo.png" alt="Logo" width="200" height="50">
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="true"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse show" id="navbarTogglerDemo02" style="">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="true"
+                        >
+                        Menú
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/pages/menuPizzas.html">Pizzas</a></li>
+                            <li><a class="dropdown-item" href="/pages/menuEmpanadas.html">Empanadas</a></li>
+                            <li><a class="dropdown-item" href="/pages/menuHamburguesas.html">Hamburguesas</a></li>
+                            <li><a class="dropdown-item" href="/pages/menuAcompaniamientos.html">Acompañamientos</a></li>
+                            <li><a class="dropdown-item" href="/pages/menuPostres.html">Postres</a></li>
+                            <li><a class="dropdown-item" href="/pages/menuBebidas.html">Bebidas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/pages/nosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link  active">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+
+    <!-- ***** Contacto***** --> 
+    <div class="container">
+        <div class="row t-5 mb-5 justify-content-center">
+            <div class="col-sm-8 pt-5 pb-5">
+                <h2 class="display-4 font-weight-bold mb-4 d-flex justify-content-center mt-auto">Contacto</h2>
+
+                <h2 class="lead font-weight-bold mb-4">Envianos tu consulta.</h2>
+                <p class="lead mb-5 justify-content-center mt-auto">Ahora podrás solicitar información y recibir orientación 
+                    personalizada.<br>
+                    Podés hacerlo a través del <b>Telefono +54 234 567 890</b> o dejandonos tu mensaje abajo:</p>     
+    
+    <!-- ***** Formulario de Contacto *****  -->
+    
+    <div class="container col-md-10 mt-5">
+        <form id="form" action="">      
+        <input name="nombre" type="text" class="feedback-input" id="nombre" placeholder="Nombre" required="" />   
+        <input name="email" type="text" class="feedback-input" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="" />
+        <textarea name="mensaje" class="feedback-input" id="mensaje" placeholder="Mensaje" required=""></textarea>
+        <input type="submit" value="Enviar"/>
+        </form>
+        <a href="mailto:*****@gmail.com" id="correojava">mail</a>
+    </div>  
+  
+    </main>
+
+    <footer class="bg-dark text-light py-5 px-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="pb-3">Contacto</h5>
+                    <p class="fw-light"><span class="fw-normal">Direccion:</span> Calle Falsa 123, Buenos Aires, Argentina</p>
+                    <p class="fw-light"><span class="fw-normal">Telefono:</span> +54 234 567 890</p>
+                    <p class="fw-light"><span class="fw-normal">Email:</span> info@restaurante.com</p>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <h5 class="pb-3">Horarios de Atención</h5>
+                    <p class="fw-light"><span class="fw-normal">Lunes a Viernes:</span> 9:00 AM - 10:00 PM</p>
+                    <p class="fw-light"><span class="fw-normal">Sábado:</span> 10:00 AM - 11:00 PM</p>
+                    <p class="fw-light"><span class="fw-normal">Domingo:</span> 11:00 AM - 9:00 PM</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="pb-2">Siguenos</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/" class="text-light mr-3 text-decoration-none fs-3">
+                                <i class="bi bi-facebook"  ></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.instagram.com/" class="text-light mr-3 text-decoration-none fs-3">
+                                <i class="bi bi-instagram" width="24"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://github.com/bruno-avila21/Restaurante" class="text-light mr-3 text-decoration-none fs-3">
+                                <i class="bi bi-github" width="24"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>&copy; 2024 A lo de alicia. Todos los derechos reservados.</p>
+                    <p>
+                        <a href="#" class="text-light">Términos y condiciones</a> | 
+                        <a href="#" class="text-light">Política de privacidad</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
