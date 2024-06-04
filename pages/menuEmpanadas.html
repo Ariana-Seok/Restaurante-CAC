@@ -133,7 +133,55 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+        function formatoPrecio(precio) {
+            return precio.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        }
 
+        function mostrarEmpanadas(empanada) {
+            const empanadaContainer = document.createElement("div");
+            empanadaContainer.classList.add("row", "mb-2");
+            const empanadasContainer = document.querySelector('.seccion_menu .container-fluid');
+
+            let mostrarempanadaImpar= `
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center info_precios">
+                    <h4 class="pb-3 fw-bolder text-uppercase text-center">${empanada.nombre}</h4>
+                    <p class="fst-italic">${empanada.descripcion}</p>
+                    <p class="fs-5 fw-bolder">$${formatoPrecio(empanada.precio)}</p>
+                </div>
+
+                <div class="col-12 col-md-6 contenedor_imagen" id="contenedor_img">
+                    <img src="${empanada.imagen}" alt="${empanada.alt}" class="imagen">
+                </div>
+            `
+
+            let mostrarempanadaPar = `
+                <div class="col-12 col-md-6 contenedor_imagen" id="contenedor_img">
+                    <img src="${empanada.imagen}" alt="${empanada.alt}" class="imagen">
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center info_precios">
+                    <h4 class="pb-3 fw-bolder text-uppercase text-center">${empanada.nombre}</h4>
+                    <p class="fst-italic">${empanada.descripcion}</p>
+                    <p class="fs-5 fw-bolder">$${formatoPrecio(empanada.precio)}</p>
+                </div>
+            `
+        
+            if (empanadasContainer.children.length % 2 !== 0) {
+                empanadaContainer.classList.add("row-reverse");
+                empanadaContainer.innerHTML= mostrarempanadaPar;
+                empanadasContainer.appendChild(empanadaContainer);
+            } else {
+                empanadaContainer.innerHTML= mostrarempanadaImpar;
+                empanadasContainer.appendChild(empanadaContainer);
+            }
+        
+        }
+        
+        fetch("../data/menu_data.json")
+        .then (res => res.json())
+        .then(data => data.empanadas.forEach(empanada => mostrarEmpanadas(empanada)));
+
+</script>
 
 </body>
 </html>
