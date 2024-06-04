@@ -1,0 +1,424 @@
+{
+    "pizzas": [
+        {
+            "id": 0,
+            "nombre": "Pizza Muzzarella",
+            "precios": {
+                "porcion": 1900,
+                "chica": 13000,
+                "grande": 14500
+            },
+            "descripcion": "Mozzarella, salsa de tomate y aceitunas verdes.",
+            "imagen": "../assets/img/menu/Pizzas/1.jpg",
+            "alt": "Foto de una pizza muzarrella"
+        },
+        {
+            "id": 1,
+            "nombre": "Napolitana",
+            "precios": {
+                "porcion": 2550,
+                "chica": 14500,
+                "grande": 19500
+            },
+            "descripcion": "Mozzarella, tomates frescos en rodajas y ajo picado",
+            "imagen": "../assets/img/menu/Pizzas/2.jpg",
+            "alt": "Foto de una pizza napolitana"
+        },
+        {
+            "id": 2,
+            "nombre": "Pizza Muzzarella con Jamón y Morrones",
+            "precios": {
+                "porcion": 2550,
+                "chica": 17000,
+                "grande": 21500
+            },
+            "descripcion": "Mozzarella, jamón cocido natural y morrones asados",
+            "imagen": "../assets/img/menu/Pizzas/3.jpg",
+            "alt": "Foto de una pizza muzarrella CON JAMON Y MORRONES"
+        },
+        {
+            "id": 3,
+            "nombre": "Pizza Muzzarella y Pepperoni",
+            "precios": {
+                "porcion": 2550,
+                "chica": 17000,
+                "grande": 21500
+            },
+            "descripcion": "Mozzarella y rodajas de Pepperoni",
+            "imagen": "../assets/img/menu/Pizzas/4.jpg",
+            "alt": "Foto de una pizza muzarrella Y pepperoni"
+        },
+        {
+            "id": 4,
+            "nombre": "Mozzarella Rúcula y Parmesano",
+            "precios": {
+                "porcion": 2450,
+                "chica": 18000,
+                "grande": 22500
+            },
+            "descripcion": "Mozzarella con Rúcula y Parmesano",
+            "imagen": "../assets/img/menu/Pizzas/5.jpg",
+            "alt": "Foto de una pizza muzarrella rucula y parmesano"
+        },
+        {
+            "id": 5,
+            "nombre": "Mozzarella con Panceta Ahumada",
+            "precios": {
+                "porcion": 2900,
+                "chica": 22000,
+                "grande": 24000
+            },
+            "descripcion": "Mozzarella con trozos de Panceta Ahumada",
+            "imagen": "../assets/img/menu/Pizzas/6.jpg",
+            "alt": "Foto de una pizza muzarrella con panceta ahumada"
+        },
+        {
+            "id": 6,
+            "nombre": "Mozzarella Jamón y Ananá",
+            "precios": {
+                "porcion": 2550,
+                "chica": 23500,
+                "grande": 25500
+            },
+            "descripcion": "Mozzarella, Jamón y Ananá en rodajas",
+            "imagen": "../assets/img/menu/Pizzas/7.jpg",
+            "alt": "Foto de una pizza muzarrella con jamon y anana"
+        },
+        {
+            "id": 7,
+            "nombre": "3 Quesos fundidos",
+            "precios": {
+                "porcion": 3350,
+                "chica": 20500,
+                "grande": 25500
+            },
+            "descripcion": "Mozzarella, Roquefort y Provolone",
+            "imagen": "../assets/img/menu/Pizzas/8.jpg",
+            "alt": "Foto de una pizza muzarrella con Roquefort y Provolone"
+        }
+    ],
+    "empanadas": [
+        {
+            "nombre": "Carne y queso Cheddar",
+            "precio": 1980,
+            "descripcion": "Carne y queso Cheddar",
+            "imagen": "../assets/img/menu/Empanadas/1.jpg",
+            "alt": "Foto de una empanada de carne con queso cheddar"
+        },
+        {
+            "nombre": "Carne Picante",
+            "precio": 1980,
+            "descripcion": "Carne picante cortada a cuchillo",
+            "imagen": "../assets/img/menu/Empanadas/2.jpg",
+            "alt": "Foto de una empanada de carne picante"
+        },
+        {
+            "nombre": "Carne suave",
+            "precio": 1980,
+            "descripcion": "Empanada de Carne suave cortada a cuchillo",
+            "imagen": "../assets/img/menu/Empanadas/3.jpg",
+            "alt": "Foto de una empanada de carne suave"
+        },
+        {
+            "nombre": "Humita",
+            "precio": 1980,
+            "descripcion": "Empanada de Humita",
+            "imagen": "../assets/img/menu/Empanadas/4.jpg",
+            "alt": "Foto de una empanada de humita"
+        },
+        {
+            "nombre": "Jamón y Queso",
+            "precio": 1980,
+            "descripcion": "Empanada rellena de Jamón y Queso Mozzarella",
+            "imagen": "../assets/img/menu/Empanadas/5.jpg",
+            "alt": "Foto de una empanada de Jamon y Queso"
+        },
+        {
+            "nombre": "Pollo",
+            "precio": 1980,
+            "descripcion": "Empanada de pollo",
+            "imagen": "../assets/img/menu/Empanadas/6.jpg",
+            "alt": "Foto de una empanada de pollo"
+        },
+        {
+            "nombre": "Queso y Cebolla",
+            "precio": 1980,
+            "descripcion": "Empanada rellena de queso Mozzarella y Cebolla",
+            "imagen": "../assets/img/menu/Empanadas/7.jpg",
+            "alt": "Foto de una empanada de queso y cebolla"
+        },
+        {
+            "nombre": "Verdura",
+            "precio": 1980,
+            "descripcion": "Empanada de verdura",
+            "imagen": "../assets/img/menu/Empanadas/8.jpg",
+            "alt": "Foto de una empanada de verdura"
+        }
+    ],
+    "postres": [
+        {
+            "nombre": "Chocotorta",
+            "precio": 3100,
+            "descripcion": "El famoso postre argentino",
+            "imagen": "../assets/img/menu/Postres/1.png",
+            "alt": "Foto de una chocotorta"
+        },
+        {
+            "nombre": "Tarta de Banana",
+            "precio": 3400,
+            "descripcion": "Tarta de banana",
+            "imagen": "../assets/img/menu/Postres/2.jpg",
+            "alt": "Foto de una tarta de banana"
+        },
+        {
+            "nombre": "Flan de Caramelo",
+            "precio": 2800,
+            "descripcion": "El famoso Flan con caramelo",
+            "imagen": "../assets/img/menu/Postres/3.jpg",
+            "alt": "Foto de un flan de caramelo"
+        },
+        {
+            "nombre": "Mousse de Chocolate",
+            "precio": 3200,
+            "descripcion": "Mousse de Chocolate",
+            "imagen": "../assets/img/menu/Postres/4.jpg",
+            "alt": "Foto de un mousse de chocolate"
+        },
+        {
+            "nombre": "Mousse de Dulce de Leche",
+            "precio": 3200,
+            "descripcion": "Mousse de Dulce de leche",
+            "imagen": "../assets/img/menu/Postres/5.jpg",
+            "alt": "Foto de un mousse de dulce de leche"
+        },
+        {
+            "nombre": "Tiramisu",
+            "precio": 2200,
+            "descripcion": "Tiramisu",
+            "imagen": "../assets/img/menu/Postres/7.webp",
+            "alt": "Foto de tiramisu"
+        },
+        {
+            "nombre": "Adicional dulce de leche",
+            "precio": 700,
+            "descripcion": "Adicional dulce de leche para el flan",
+            "imagen": "../assets/img/menu/Postres/6.jpg",
+            "alt": "Foto de dulce de leche"
+        }
+        
+    ],
+    "bebidas": [
+        {
+            "nombre": "Alma Mora",
+            "precio": 8500,
+            "descripcion": "Vino Tinto Alma Mora.",
+            "imagen": "../assets/img/menu/Bebidas/conAlcohol/1.jpg",
+            "conalcohol": true,
+            "alt": "Foto de un vino"
+        },
+        {
+            "nombre": "Champagne Dante Robino",
+            "precio": 9700,
+            "descripcion": "Champagne Dante Robino Extra Brut.",
+            "imagen": "../assets/img/menu/Bebidas/conAlcohol/2.jpg",
+            "conalcohol": true,
+            "alt": "Foto de un champagne"
+        },
+        {
+            "nombre": "Champagne Novecento",
+            "precio": 6300,
+            "descripcion": "Champagne Novecento",
+            "imagen": "../assets/img/menu/Bebidas/conAlcohol/3.jpg",
+            "conalcohol": true,
+            "alt": "Foto de un champagne"
+        },
+        {
+            "nombre": "Dante Robino Blanco",
+            "precio": 8200,
+            "descripcion": "Vino Blanco Dante Robino",
+            "imagen": "../assets/img/menu/Bebidas/conAlcohol/4.jpg",
+            "conalcohol": true,
+            "alt": "Foto de un vino"
+        },
+        {
+            "nombre": "Norton Malbec",
+            "precio": 11900,
+            "descripcion": "Vino Tinto Norton",
+            "imagen": "../assets/img/menu/Bebidas/conAlcohol/5.jpg",
+            "conalcohol": true,
+            "alt": "Foto de un vino"
+        },
+        {
+            "nombre": "Alamos Malbec",
+            "precio": 12800,
+            "descripcion": "Vino Tinto Alamos Malbec",
+            "imagen": "../assets/img/menu/Bebidas/conAlcohol/6.jpg",
+            "conalcohol": true,
+            "alt": "Foto de un vino"
+        },
+        {
+            "nombre": "Familia Gascón",
+            "precio": 7800,
+            "descripcion": "Vino Tinto Familia Gascón",
+            "imagen": "../assets/img/menu/Bebidas/conAlcohol/7.jpg",
+            "conalcohol": true,
+            "alt": "Foto de un vino"
+        },
+        {
+            "nombre": "Novecento",
+            "precio": 5400,
+            "descripcion": "Vino Tinto Novecento",
+            "imagen": "../assets/img/menu/Bebidas/conAlcohol/8.jpeg",
+            "conalcohol": true,
+            "alt": "Foto de un vino"
+        },
+        {
+            "nombre": "Brahma Lata 473cc",
+            "precio": 2400,
+            "descripcion": "Brahma Lata",
+            "imagen": "../assets/img/menu/Bebidas/conAlcohol/9.jpg",
+            "conalcohol": true,
+            "alt": "Foto de una lata"
+        },
+        {
+            "nombre": "Stella Artois Lata 473cc",
+            "precio": 3500,
+            "descripcion": "Stella Artois Lata",
+            "imagen": "../assets/img/menu/Bebidas/conAlcohol/10.jpg",
+            "conalcohol": true,
+            "alt": "Foto de una lata"
+        },
+        {
+            "nombre": "Coca Cola 500cc",
+            "precio": 2000,
+            "descripcion": "Coca Cola 500cc",
+            "imagen": "../assets/img/menu/Bebidas/sinAlcohol/1.jpg",
+            "conalcohol": false,
+            "alt": "Foto de una Coca Cola 500cc"
+        },
+        {
+            "nombre": "Mirinda 500cc",
+            "precio": 2400,
+            "descripcion": "Mirinda 500cc",
+            "imagen": "../assets/img/menu/Bebidas/sinAlcohol/2.jpg",
+            "conalcohol": false,
+            "alt": "Foto de una Mirinda 500cc"
+        },
+        {
+            "nombre": "Seven Up Free 500cc",
+            "precio": 2000,
+            "descripcion": "Seven Up Free 500cc",
+            "imagen": "../assets/img/menu/Bebidas/sinAlcohol/3.png",
+            "conalcohol": false,
+            "alt": "Foto de una Seven Up"
+        },
+        {
+            "nombre": "Paso de los toros 500cc",
+            "precio": 2000,
+            "descripcion": "Opciones Pomelo y Pomelo sin azúcar.",
+            "imagen": "../assets/img/menu/Bebidas/sinAlcohol/4.jpg",
+            "conalcohol": false,
+            "alt": "Foto de una gaseosa de Paso de los toros"
+        },
+        {
+            "nombre": "Agua Mineral",
+            "precio": 1700,
+            "descripcion": "Agua Mineral",
+            "imagen": "../assets/img/menu/Bebidas/sinAlcohol/5.jpg",
+            "conalcohol": false,
+            "alt": "Foto de una botella de agua"
+        },
+        {
+            "nombre": "Agua Mineral con gas",
+            "precio": 1700,
+            "descripcion": "Agua Mineral con gas",
+            "imagen": "../assets/img/menu/Bebidas/sinAlcohol/6.jpg",
+            "conalcohol": false,
+            "alt": "Foto de una botella de agua con gas"
+        }
+    ],
+    "acompaniamientos": [
+        {
+            "nombre": "Papas Fritas",
+            "precio": 2200,
+            "imagen": "../assets/img/menu/Acompaniamiento/1.webp",
+            "alt": "Foto de papas fritas"
+        },
+        {
+            "nombre": "Puré de papas",
+            "precio": 2200,
+            "imagen": "../assets/img/menu/Acompaniamiento/2.webp",
+            "alt": "Foto de pure de papas"
+        },
+        {
+            "nombre": "Rabas",
+            "precio": 6200,
+            "imagen": "../assets/img/menu/Acompaniamiento/3.webp",
+            "alt": "Foto de rabas"
+        },
+        {
+            "nombre": "Huevo Frito",
+            "precio": 600,
+            "imagen": "../assets/img/menu/Acompaniamiento/4.webp",
+            "alt": "Foto de un huevo frito"
+        }
+    ],
+    "hamburguesas": [
+        {
+            "nombre": "Hamburguesa 4 Quesos",
+            "precio": 4800,
+            "descripcion": "Hamburguesa de carne, queso cheddar, queso provolone, queso suizo, queso roquerfort, cebolla caramelizada, acompañada de papas fritas",
+            "imagen": "../assets/img/menu/Hamburguesas/1.png",
+            "alt": "Foto de una hamburguesa"
+        },
+        {
+            "nombre": "Hamburguesa Veggie",
+            "precio": 4800,
+            "descripcion": "Hamburguesa de legumbres, ruculua, tomamte cherrys asados y alioli de berenjena.",
+            "imagen": "../assets/img/menu/Hamburguesas/2.png",
+            "alt": "Foto de una hamburguesa"
+        },
+        {
+            "nombre": "Hamburguesa Loberense y Papas",
+            "precio": 4800,
+            "descripcion": "Hamburguesa de carne, salsa de queso, panceta, tomamte confitado, rúcula, acompañada de papas fritas.",
+            "imagen": "../assets/img/menu/Hamburguesas/3.png",
+            "alt": "Foto de una hamburguesa"
+        },
+        {
+            "nombre": "Hamburguesa Argenta y Papas",
+            "precio": 4800,
+            "descripcion": "Hamburguesa de carne, jamón, queso suizo, lechuga, tomate con o sin huevo, acompañada con papas fritas",
+            "imagen": "../assets/img/menu/Hamburguesas/4.png",
+            "alt": "Foto de una hamburguesa"
+        },
+        {
+            "nombre": "Hamburguesa Costa Rica",
+            "precio": 4800,
+            "descripcion": "Medallón de carne, tomate, provoleta, salsa portuguesa, alioli ahumado, papas fritas",
+            "imagen": "../assets/img/menu/Hamburguesas/5.png",
+            "alt": "Foto de una hamburguesa"
+        },
+        {
+            "nombre": "Hamburguesa Crispy Y Papas",
+            "precio": 4800,
+            "descripcion": "Pollo crispy, cebolla morada, lechuga, tomate, mayonesa de cilantro, acompañada de papas fritas.",
+            "imagen": "../assets/img/menu/Hamburguesas/6.png",
+            "alt": "Foto de una hamburguesa"
+        },
+        {
+            "nombre": "Hamburguesa Hamburtica y Papas",
+            "precio": 4800,
+            "descripcion": "Hamburguesa de carne, panceta, queso provolone, sweet chillo, pickle de cebolla morada, acompañada de papas fritas",
+            "imagen": "../assets/img/menu/Hamburguesas/7.png",
+            "alt": "Foto de una hamburguesa"
+        },
+        {
+            "nombre": "Hamburguesa Oklahoma",
+            "precio": 4800,
+            "descripcion": "Medallon carne, cheddar, huevo panceta, alioli ahumado, papas fritas",
+            "imagen": "../assets/img/menu/Hamburguesas/8.png",
+            "alt": "Foto de una hamburguesa"
+        }
+    ]
+}
