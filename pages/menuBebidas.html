@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <title>Bebidas - Lo de Alicia</title>
+</head>
+<body>
+    <nav class="nav-restaurante navbar sticky-top bg-light">
+        <div class="container-fluid">
+            <a href="../index.html" class="navbar-brand">
+                <img src="/img/Logo.png" alt="Logo" width="200" height="50">
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02"
+                aria-expanded="true"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse show" id="navbarTogglerDemo02" style="">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="true"
+                        >
+                        Menú
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./menuPizzas.html">Pizzas</a></li>
+                            <li><a class="dropdown-item" href="./menuEmpanadas.html">Empanadas</a></li>
+                            <li><a class="dropdown-item" href="./menuHamburguesas.html">Hamburguesas</a></li>
+                            <li><a class="dropdown-item" href="./menuAcompaniamientos.html">Acompañamientos</a></li>
+                            <li><a class="dropdown-item" href="./menuPostres.html">Postres</a></li>
+                            <li><a class="dropdown-item" href="#">Bebidas</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link">Promociones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../sobrenosotros.html">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container-fluid p-0">
+            <section class="seccion_portada portada_bebidas d-flex flex-column align-items-center justify-content-center text-light text-center">
+                <span class=" fs-5 fw-bolder text-uppercase text-light">Menú</span>
+                <h1 class="fw-bold seccion__portada__titulo">Bebidas</h1>
+                <p>Cada bebida, una experiencia</p>
+                <button class="btn btn_orange fw-medium mt-4">Ordena ahora</button>
+            </section>
+
+            <section class="seccion_menu">
+                <div class="container-fluid">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12">
+                            <h2 class="my-4 text-center py-5 text-uppercase fw-bolder">Bebidas con Alcohol</h2>
+                        </div>
+                        <div class="row d-flex justify-content-center" id="bebidas-alcohol"></div>
+                    </div>
+
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12">
+                            <h2 class="my-4 text-center py-5 text-uppercase fw-bolder">Bebidas sin Alcohol</h2>
+                        </div>
+                        <div class="row d-flex justify-content-center" id="bebidas-sinalcohol"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-5 px-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5 class="pb-3">Contacto</h5>
+                    <p class="fw-light"><span class="fw-normal">Direccion:</span> Calle Falsa 123, Buenos Aires, Argentina</p>
+                    <p class="fw-light"><span class="fw-normal">Telefono:</span> +54 234 567 890</p>
+                    <p class="fw-light"><span class="fw-normal">Email:</span> info@restaurante.com</p>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <h5 class="pb-3">Horarios de Atención</h5>
+                    <p class="fw-light"><span class="fw-normal">Lunes a Viernes:</span> 9:00 AM - 10:00 PM</p>
+                    <p class="fw-light"><span class="fw-normal">Sábado:</span> 10:00 AM - 11:00 PM</p>
+                    <p class="fw-light"><span class="fw-normal">Domingo:</span> 11:00 AM - 9:00 PM</p>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <h5 class="pb-2">Siguenos</h5>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="www.facebook.com" class="text-light mr-3 text-decoration-none fs-3">
+                                <i class="bi bi-facebook"  ></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="www.instagram.com" class="text-light mr-3 text-decoration-none fs-3">
+                                <i class="bi bi-instagram" width="24"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="www.github.com" class="text-light mr-3 text-decoration-none fs-3">
+                                <i class="bi bi-github" width="24"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p>&copy; 2024 A lo de alicia. Todos los derechos reservados.</p>
+                    <p>
+                        <a href="#" class="text-light">Términos y condiciones</a> | 
+                        <a href="#" class="text-light">Política de privacidad</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        function formatoPrecio(precio) {
+            return precio.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        }
+
+        function mostrarBebidas(bebida) {
+            const bebidaContainer = document.createElement("div");
+            bebidaContainer.classList.add("col-lg-4", "mb-4", "d-flex", "justify-content-center");
+            const bebidasContainer = bebida.conalcohol ? document.getElementById('bebidas-alcohol') : document.getElementById('bebidas-sinalcohol');
+
+            let mostrarBebida= `
+                <div class="card card_naranja mb-3 p-3" style="width: 18rem;">
+                    <img src="${bebida.imagen}" alt="${bebida.alt}" class="card-img-top contenedor_imagen_bebidas">
+                    <div class="card-body d-flex flex-column align-items-start justify-content-between">
+                        <h4 class="card-title pb-2 fs-5 fw-bolder text-uppercase">${bebida.nombre}</h4>
+                        <p class="card-subtitle fst-italic pb-4">${bebida.descripcion}</p>
+                        <p class="fw-bolder fs-5">$${formatoPrecio(bebida.precio)}</p>
+                    </div>
+                </div>
+            `
+        
+            bebidaContainer.innerHTML = mostrarBebida;
+            bebidasContainer.appendChild(bebidaContainer);
+        
+        }
+        
+        fetch("../data/menu_data.json")
+        .then (res => res.json())
+        .then(data => data.bebidas.forEach(bebida => mostrarBebidas(bebida)));
+
+    </script>
+</body>
+</html>
