@@ -130,6 +130,58 @@
             </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        function formatoPrecio(precio) {
+            return precio.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+        }
+
+        function mostrarHamburguesas(hamburguesa) {
+            const hamburguesaContainer = document.createElement("div");
+            hamburguesaContainer.classList.add("row", "mb-2");
+            const hamburguesasContainer = document.querySelector('.seccion_menu .container-fluid');
+
+            let mostrarhamburguesaImpar= `
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center info_precios">
+                    <h4 class="pb-3 fw-bolder text-uppercase text-center">${hamburguesa.nombre}</h4>
+                    <p class="fst-italic w-50 text-center py-4">${hamburguesa.descripcion}</p>
+                    <p class="fs-5 fw-bolder">$${formatoPrecio(hamburguesa.precio)}</p>
+                </div>
+
+                <div class="col-12 col-md-6 contenedor_imagen" id="contenedor_img">
+                    <img src="${hamburguesa.imagen}" alt="${hamburguesa.alt}" class="imagen">
+                </div>
+            `
+
+            let mostrarhamburguesaPar = `
+                <div class="col-12 col-md-6 contenedor_imagen" id="contenedor_img">
+                    <img src="${hamburguesa.imagen}" alt="${hamburguesa.alt}" class="imagen">
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center info_precios">
+                    <h4 class="pb-3 fw-bolder text-uppercase text-center">${hamburguesa.nombre}</h4>
+                    <p class="fst-italic w-50 text-center py-4"">${hamburguesa.descripcion}</p>
+                    <p class="fs-5 fw-bolder">$${formatoPrecio(hamburguesa.precio)}</p>
+                </div>
+            `
+        
+            if (hamburguesasContainer.children.length % 2 !== 0) {
+                hamburguesaContainer.classList.add("row-reverse");
+                hamburguesaContainer.innerHTML= mostrarhamburguesaPar;
+                hamburguesasContainer.appendChild(hamburguesaContainer);
+            } else {
+                hamburguesaContainer.innerHTML= mostrarhamburguesaImpar;
+                hamburguesasContainer.appendChild(hamburguesaContainer);
+            }
+        
+        }
+        
+        fetch("../data/menu_data.json")
+        .then (res => res.json())
+        .then(data => data.hamburguesas.forEach(hamburguesa => mostrarHamburguesas(hamburguesa)));
+
+    </script>
+
 </body>
 </html>
