@@ -13,6 +13,11 @@
     height: 45vh;
 }
 
+.seccion__portada__titulo{
+    font-size: 4rem;
+    letter-spacing: 0.2rem; 
+    text-transform: uppercase;
+}
 
 .portada_pizza {
     background: url(../assets/img/menu/Pizza.jpeg);
@@ -22,7 +27,15 @@
     position: relative;
 }
 
-.portada_pizza::before{
+.portada_empanada {
+    background: url(../assets/img/menu/fotodeempanadas.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.portada_pizza::before, .portada_empanada::before{
     content: '';
     position: absolute;
     top: 0;
@@ -33,12 +46,6 @@
     z-index: 1;
 }
 
-
-.seccion_portada h1 {
-    font-size: 4rem;
-    letter-spacing: 0.2rem; 
-    text-transform: uppercase;
-}
 
 .seccion_portada p {
     font-size: 1.2rem;
@@ -94,5 +101,23 @@
     }
     .info_precios{
         padding: 4rem;
+    }
+
+    .seccion__portada__titulo{
+        font-size: 3rem;
+    }
+
+    .seccion_portada p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .seccion__portada__titulo{
+        font-size: 2rem;
+    }
+
+    .seccion_portada p {
+        font-size: 0.7rem;
     }
 }
