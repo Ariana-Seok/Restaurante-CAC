@@ -43,7 +43,15 @@
     position: relative;
 }
 
-.portada_pizza::before, .portada_empanada::before, .portada_hamburguesa::before{
+.portada_acompaniamiento {
+    background: url(../assets/img/menu/fotoacompañamiento.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.portada_pizza::before, .portada_empanada::before, .portada_hamburguesa::before, .portada_acompaniamiento::before{
     content: '';
     position: absolute;
     top: 0;
