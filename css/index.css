@@ -2,6 +2,41 @@ body{
     margin: none !important;
 }
 
+.txt-blanco {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background: rgba(242, 155, 48, 0.8);
+  border-radius: 5px;
+  border: 0;
+  color: #fff;
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.btn-naranja{
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  background:#F29B30;
+  border-radius:5px;
+  border:0;
+  cursor:pointer;
+  color:#fff;
+  font-size:24px;
+  padding-top:10px;
+  padding-bottom:10px;
+  transition: all 0.3s;
+  margin-top:-4px;
+  font-weight:700;
+}
+
+.btn-naranja:hover{
+  background:#eee;
+   color: #F29B30;
+}
+
 .nav-restaurante {
     padding: 10px;
     text-align: center;
@@ -9,7 +44,7 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-nav img,
+
 nav ul {
     display: inline-block;
     vertical-align: middle;
