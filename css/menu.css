@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.seccion_portada{
+    padding: 1rem 2.2rem;
+    margin:0;
+    width: 100%;
+    height: 45vh;
+}
+
+
+.portada_pizza {
+    background: url(../assets/img/menu/Pizza.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.portada_pizza::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 46, 46, 0.377);
+    z-index: 1;
+}
+
+
+.seccion_portada h1 {
+    font-size: 4rem;
+    letter-spacing: 0.2rem; 
+    text-transform: uppercase;
+}
+
+.seccion_portada p {
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+}
+
+.seccion_portada h1, .seccion_portada p, .seccion_portada span, .seccion_portada .btn{
+    position: relative;
+    z-index: 2;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.btn_orange {
+    background-color: #B88D37;
+    color: #fff;
+}
+
+.btn_orange:hover{
+    background-color: #d89f2c;
+    box-shadow: 0 0 10px hsl(40, 96%, 52%);
+}
+
+.texto-mostaza{
+    color: #be7f00;
+    text-transform: uppercase;
+}
+
+.contenedor_imagen{
+    height: 25rem;
+}
+
+.imagen {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor_imagen_bebidas{
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card_naranja{
+    background-color: #fa8e005c;
+    border: none;
+}
+
+@media screen and (max-width: 760px) {
+    .row.row-reverse {
+        flex-direction: column-reverse;
+    }
+    .info_precios{
+        padding: 4rem;
+    }
+}
