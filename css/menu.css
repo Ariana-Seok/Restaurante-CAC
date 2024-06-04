@@ -35,7 +35,15 @@
     position: relative;
 }
 
-.portada_pizza::before, .portada_empanada::before{
+.portada_hamburguesa{
+    background: url(../assets/img/menu/fotoHamburguesa.webp);
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.portada_pizza::before, .portada_empanada::before, .portada_hamburguesa::before{
     content: '';
     position: absolute;
     top: 0;
