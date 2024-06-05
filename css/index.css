@@ -75,6 +75,9 @@ nav ul li {
     margin-right: 10px; 
 }
 
+.icono_footer{
+  width: 24px;
+}
 
 /*
 ---------------------------------------------
@@ -194,7 +197,7 @@ Contacto FIN
   font-size: 0.9rem;
 }
 
-.seccion_notificacion p {
+.seccion_notificacion h5 {
   font-size: 1rem;
   font-weight: 700;
   padding-top: 0.5rem;

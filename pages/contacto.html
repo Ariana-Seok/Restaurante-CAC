@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"/>
     <link rel="stylesheet" href="/css/index.css">
     <link rel="shortcut icon" href="../assets/favicon/favicon1.png" type="image/x-icon">
     <title>Contacto - Lo de Alicia</title>
@@ -13,7 +13,7 @@
     <nav class="nav-restaurante navbar navbar-expand-lg sticky-top">
         <div class="container-fluid">
             <a href="../index.html" class="navbar-brand">
-                <img src="../assets/logo/Logo (2).png" alt="Logo" width="200" height="50">
+                <img src="../assets/logo/Logo.png" alt="Logo" width="200" height="50">
             </a>
             <button
                 class="navbar-toggler"
@@ -62,30 +62,32 @@
     </nav>
 
     <main>
+        <section class="seccion_contacto">
+            <!-- ***** Contacto***** --> 
 
-    <!-- ***** Contacto***** --> 
-    <div class="container">
-        <div class="row t-5 mb-5 justify-content-center">
-            <div class="col-sm-8 pt-5 pb-5">
-                <h2 class="display-4 font-weight-bold mb-4 d-flex justify-content-center mt-auto">Contacto</h2>
+            <div class="container">
+                <div class="row mt-5 mb-5 justify-content-center">
+                    <div class="col-sm-8 pt-5 pb-5">
+                        <h2 class="display-4 fw-bolder mb-4 d-flex justify-content-center mt-auto">Contacto</h2>
+                        <h4 class="lead fw-medium mb-4">Envianos tu consulta.</h4>
+                        <p class="lead mb-5 justify-content-center mt-auto">Ahora podrás solicitar información y recibir orientación 
+                            personalizada. Podés hacerlo a través del <span class="fw-medium">teléfono +54 234 567 890</span> o dejandonos tu mensaje abajo:</p>     
+            
 
-                <h2 class="lead font-weight-bold mb-4">Envianos tu consulta.</h2>
-                <p class="lead mb-5 justify-content-center mt-auto">Ahora podrás solicitar información y recibir orientación 
-                    personalizada.<br>
-                    Podés hacerlo a través del <b>Telefono +54 234 567 890</b> o dejandonos tu mensaje abajo:</p>     
+            <!-- ***** Formulario de Contacto *****  -->
+            
+            <div class="container col-md-10 mt-5">
+                <form id="form" action="">      
+                <input name="nombre" type="text" class="feedback-input" id="nombre" placeholder="Nombre" required="" />   
+                <input name="email" type="text" class="feedback-input" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="" />
+                <textarea name="mensaje" class="feedback-input" id="mensaje" placeholder="Mensaje" required=""></textarea>
+                <input type="submit" value="Enviar"/>
+                </form>
+                <a href="mailto:*****@gmail.com" id="correojava">mail</a>
+            </div>  
+        </section>
     
-    <!-- ***** Formulario de Contacto *****  -->
-    
-    <div class="container col-md-10 mt-5">
-        <form id="form" action="">      
-        <input name="nombre" type="text" class="feedback-input" id="nombre" placeholder="Nombre" required="" />   
-        <input name="email" type="text" class="feedback-input" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="" />
-        <textarea name="mensaje" class="feedback-input" id="mensaje" placeholder="Mensaje" required=""></textarea>
-        <input type="submit" value="Enviar"/>
-        </form>
-        <a href="mailto:*****@gmail.com" id="correojava">mail</a>
-    </div>  
-  
+
     </main>
 
     <footer class="bg-dark text-light py-5 px-4">
@@ -110,17 +112,17 @@
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <a href="https://www.facebook.com/" class="text-light mr-3 text-decoration-none fs-3">
-                                <i class="bi bi-facebook"  ></i>
+                                <i class="bi bi-facebook icono_footer"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://www.instagram.com/" class="text-light mr-3 text-decoration-none fs-3">
-                                <i class="bi bi-instagram" width="24"></i>
+                                <i class="bi bi-instagram icono_footer"></i>
                             </a>
                         </li>
                         <li class="list-inline-item">
                             <a href="https://github.com/bruno-avila21/Restaurante" class="text-light mr-3 text-decoration-none fs-3">
-                                <i class="bi bi-github" width="24"></i>
+                                <i class="bi bi-github icono_footer"></i>
                             </a>
                         </li>
                     </ul>
