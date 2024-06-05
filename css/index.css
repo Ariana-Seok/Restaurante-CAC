@@ -147,3 +147,22 @@ Contacto FIN
   transform: scaleX(1);
   transform-origin: bottom left;
 }
+
+.btn_wsp {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 100%;
+  padding: 0.5rem 0.95rem;
+  font-size: 1.9rem;
+  background-color: rgb(6, 207, 6);
+  color: white;
+  margin: 0 25px 30px 0;
+  box-shadow: 0 0 10px rgba(86, 86, 86, 0.459);
+}
+
+.btn_wsp:hover{
+  background-color: transparent;
+  box-shadow: 0 0 20px rgba(37, 37, 37, 0.459);
+  color: rgb(6, 207, 6);
+}
