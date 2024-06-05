@@ -6,6 +6,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./css/index.css">
     <link rel="shortcut icon" href="/assets/favicon/favicon1.png" type="image/x-icon">
     <title>Inicio - Lo de Alicia</title>
@@ -67,7 +68,7 @@
             <div class="container_fluid">
                 <span>¡Se acerca el Día del Padre! Celebremos a papá en grande</span>
                 <p>Disfruta de comidas deliciosas y un postre exquisito en honor a papá. Echa un vistazo a nuestro menú especial:</p>
-                <a href="./assets/pdf/Dia_Del_Padre.pdf" download="Dia_Del_Padre.pdf">Menú del dia del padre</a>
+                <a href="./assets/pdf/Dia_Del_Padre.pdf" download="Dia_Del_Padre.pdf" class="descarga">Menú del dia del padre</a>
             </div>
         </section>
 
@@ -96,7 +97,7 @@
 
     <main>
         <div class="container-fluid text-dark p-0">
-            <section class="seccion_servicios text-dark">
+            <section class="seccion_servicios text-dark" data-aos="fade-up">
                 <div class="row justify-content-center">
                     <div class="col-md-3 col-sm-6 text-center">
                         <img src="./assets/icons/hamburguesa-orange.png" alt="Quality Food" class="mx-auto mb-4 imagen_logo animate__animated animate__pulse" width="75px" height="75px">
@@ -121,7 +122,7 @@
                 </div>
             </section>
 
-            <section class="seccion_recetas py-5 px-5">
+            <section class="seccion_recetas py-5 px-5" data-aos="fade-up">
                 <h2 class="text-center display-4 fw-bolder mb-5">Nuestras Recetas</h2>
                 <hr class="line-small mb-5">
                 <div class="row justify-content-center">
@@ -169,8 +170,8 @@
                 </div>
             </section>
 
-            <section class="seccion_testimonios p-5">
-                <h2 class="text-center display-5 fw-bolder mb-5">Testimonios</h2>
+            <section class="seccion_testimonios p-5" data-aos="fade-up">
+                <h2 class="text-center display-6 fw-bolder mb-5">Testimonios</h2>
                 <hr class="line-small mb-5">
                 <div class="row justify-content-center">
                     <div class="col-md-4">
@@ -282,6 +283,10 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     
     <!-- Correo JAVA -->
     <script>
@@ -296,6 +301,6 @@
           $buttonMailto.setAttribute('href', `mailto:info@lodealicia.com?subject=asunto: ${form.get('')} nombre: ${form.get('nombre')}  correo: ${form.get('email')}&body=${form.get('mensaje')}`)
           $buttonMailto.click()
         }     
-        </script>    
+    </script>    
 </body>
 </html>

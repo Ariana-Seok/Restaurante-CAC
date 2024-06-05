@@ -317,6 +317,10 @@ Contacto FIN
   margin-right: 4px;
 }
 
+.descarga:hover{
+  color: white;
+}
+
 @media screen and (max-width: 960px) {
   .contenedor_info {
     content: '';
