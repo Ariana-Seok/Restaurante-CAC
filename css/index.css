@@ -20,25 +20,30 @@ body{
   margin-bottom: 25px;
 }
 
-.btn-naranja{
-  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-  background:#F29B30;
-  border-radius:5px;
-  border:0;
-  cursor:pointer;
-  color:#fff;
-  font-size:24px;
-  padding-top:10px;
-  padding-bottom:10px;
-  transition: all 0.3s;
-  margin-top:-4px;
-  font-weight:700;
+.portada_inicio{
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.btn-naranja:hover{
-  background:#eee;
-   color: #F29B30;
+.carousel-inner {
+  height: 50vh !important;
 }
+
+.carousel-item {
+  height: 100%;
+  
+}
+
+.carousel_imagen{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .nav-restaurante {
     padding: 10px;
@@ -170,9 +175,7 @@ Contacto FIN
   color: rgb(6, 207, 6);
 }
 
-header .portada_inicio {
-  height: 80%;
-}
+
 
 .seccion_notificacion{
   width: 100%;
