@@ -150,19 +150,186 @@ Contacto FIN
 
 .btn_wsp {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 18px;
+  right: 25px;
   border-radius: 100%;
   padding: 0.5rem 0.95rem;
   font-size: 1.9rem;
   background-color: rgb(6, 207, 6);
   color: white;
-  margin: 0 25px 30px 0;
   box-shadow: 0 0 10px rgba(86, 86, 86, 0.459);
+  z-index: 3;
 }
 
 .btn_wsp:hover{
   background-color: white;
   box-shadow: 0 0 20px rgba(37, 37, 37, 0.459);
   color: rgb(6, 207, 6);
+}
+
+header .portada_inicio {
+  height: 80%;
+}
+
+.seccion_notificacion{
+  width: 100%;
+  height: auto;
+  padding: 1.2rem 2rem;
+  background-color: #e2b102f0;
+}
+
+.seccion_notificacion div {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.seccion_notificacion div span {
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.seccion_notificacion p {
+  font-size: 1rem;
+  font-weight: 700;
+  padding-top: 0.5rem;
+}
+
+.seccion_notificacion a {
+  color: #000000;
+  font-size: 0.9rem;
+}
+
+.contenedor_info {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.333);
+}
+
+
+.contenedor__info__imagen {
+  width: 70%;
+}
+
+.contenedor__info__titulo{
+  font-size: 2.5rem; 
+  padding-bottom: 1.2rem;
+  border-bottom: 5px solid #d59a23;
+}
+
+.contenedor__info__slogan {
+  margin-top: 1rem;
+  padding: 0.8rem 0.3rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+
+.btn_reserva {
+  margin-top: 1.5rem;
+  background-color: #d59a23;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  font-size: 1.15rem;
+  
+}
+
+.btn_reserva:hover, .btn_reserva:focus{
+  background-color: #d89f2c;
+  box-shadow: 0 0 15px hsl(40, 96%, 52%);
+  transition: box-shadow .2s ease-out;
+}
+
+.seccion_servicios{
+  background-color: #fff;
+  padding: 6rem 3rem ;
+}
+
+.seccion_recetas {
+  background-color: #faf9f6;
+}
+
+.seccion_recetas .card {
+  border: none;
+  box-shadow: 0 0 10px rgb(194, 194, 194);
+  transition: transform .5 ease-in-out;
+}
+
+.line-small{
+  max-width: 100px;
+  font-size: 85%;
+  border-width: 3px;
+  height: 5px;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 4px solid #d99611;
+}
+
+.imagen_logo:hover{
+  animation: pulse 1s ease-in-out infinite;
+}
+
+.seccion_testimonios {
+  background-color: #f5f5f5;
+  padding: 5rem 0;
+}
+
+.card {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.contenedor_estrellas{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: #FFBF00;
+}
+
+.contenedor_estrellas i {
+  margin-right: 4px;
+}
+
+@media screen and (max-width: 960px) {
+  .contenedor_info {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 46, 46, 0.494);
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .contenedor__info__titulo{
+    font-size: 1.9rem;
+  }
+
+  .contenedor__info__slogan {
+    font-size: 1rem;
+  }
 }
