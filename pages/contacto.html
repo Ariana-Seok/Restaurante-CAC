@@ -62,29 +62,71 @@
     </nav>
 
     <main>
-        <section class="seccion_contacto">
+        <section class="seccion_contacto mb-4 mt-4">
             <!-- ***** Contacto***** --> 
-
+            <h2 class="display-4 fw-bolder text-center mb-5">Contacto</h2>
             <div class="container">
-                <div class="row mt-5 mb-5 justify-content-center">
-                    <div class="col-sm-8 pt-5 pb-5">
-                        <h2 class="display-4 fw-bolder mb-4 d-flex justify-content-center mt-auto">Contacto</h2>
-                        <h4 class="lead fw-medium mb-4">Envianos tu consulta.</h4>
-                        <p class="lead mb-5 justify-content-center mt-auto">Ahora podrás solicitar información y recibir orientación 
+                <div class="row row_reverse">
+                    <div class="col-md-6 contenedor_consulta">
+                        <h4 class="lead fw-bolder mb-4 mt-2 ">Envianos tu consulta.</h4>
+                        <p class="lead mb-5 justify-content-center">Ahora podrás solicitar información y recibir orientación 
                             personalizada. Podés hacerlo a través del <span class="fw-medium">teléfono +54 234 567 890</span> o dejandonos tu mensaje abajo:</p>     
-            
+                    
+                        <!-- ***** Formulario de Contacto *****  -->
 
-            <!-- ***** Formulario de Contacto *****  -->
+                        <form action="#" id="form" class="w-100">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" name="nombre" class="form-control feedback-input" id="nombre" placeholder="Nombre" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" name="apellido" class="form-control feedback-input" id="apellido" placeholder="Apellido" required>
+                                </div>
+                                <div class="col-md-12 mb-3">
+                                    <input type="text" name="email" class="form-control feedback-input" id="email" placeholder="Email" required pattern="[^ @]*@[^ @]*">
+                                </div>
+                            </div>
+        
+                            <div class="mb-3">
+                                <select class="form-control feedback-input" id="temaMensaje" name="temaMensaje" required>
+                                    <option>Asunto</option>
+                                    <option value="consulta">Consulta</option>
+                                    <option value="reservacion">Reservación</option>
+                                    <option value="comida">Comida</option>
+                                </select>
+                            </div>
+                    
+                            <div class="mb-3">
+                                <textarea class="form-control textarea-custom-height feedback-input" id="charla" placeholder="Escribe un mensaje..." required></textarea>
+                                <p class="form-text text-muted text-start">Recuerda incluir un título para tu charla.</p>
+                            </div>
+                                
+                            <div class="mb-3">
+                                <input type="checkbox" name="terminos" id="terminos" required>
+                                <label for="terminos"> He leído y acepto los <a href="#">términos y condiciones</a>.</label>
+                                <p class="form-text text-muted text-start">Marcar esta casilla es obligatorio para enviar el formulario.</p>
+                            </div>
+        
+                            <button type="submit" class="btn d-inline w-100 btn-success btn-bg-opacity-60">Enviar</button>
+                        </form>
+                        <a href="mailto:*****@gmail.com" id="correojava">mail</a>
+                    
+                    </div>
+
+                    <div class="col-md-6 contenedor_imagen_contacto p-5">
+                        <div class="contenedor_imagen">
+                            <img src="../assets/icons/cocinera.png" alt="logo de una cocinera" class="imagen">
+                        </div>
+                        
+                    </div>
+
+                    
+                </div>
+
+
+            </div>   
+
             
-            <div class="container col-md-10 mt-5">
-                <form id="form" action="">      
-                <input name="nombre" type="text" class="feedback-input" id="nombre" placeholder="Nombre" required="" />   
-                <input name="email" type="text" class="feedback-input" id="email" pattern="[^ @]*@[^ @]*" placeholder="Email" required="" />
-                <textarea name="mensaje" class="feedback-input" id="mensaje" placeholder="Mensaje" required=""></textarea>
-                <input type="submit" value="Enviar"/>
-                </form>
-                <a href="mailto:*****@gmail.com" id="correojava">mail</a>
-            </div>  
         </section>
     
 
