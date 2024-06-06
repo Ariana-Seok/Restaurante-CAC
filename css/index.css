@@ -79,6 +79,13 @@ nav ul li {
   width: 24px;
 }
 
+.info_estado {
+  display: inline;
+  padding: 1px 0px;
+  font-size: 0.7rem;
+  color: red;
+  font-weight: 400;
+}
 
 
 /*
@@ -93,9 +100,8 @@ form { margin:0 auto; }
 }
 
 .contenedor_consulta {
-  border: 1px solid rgba(242, 155, 48, 0.8);
-  border-radius: 10px;
-  box-shadow: 0 0 8px rgba(242, 155, 48, 0.8);
+  border: 5px solid rgba(242, 155, 48, 0.8);
+  border-radius: 15px;
   padding: 1rem 2rem;
 }
 
@@ -121,14 +127,21 @@ form { margin:0 auto; }
   background-color: transparent;
   border:2px solid #F29B30;
   transition: all 0.3s;
-  padding: 13px;
-  margin-bottom: 15px;
+  padding: 15px;
   width:100%;
   box-sizing: border-box;
   outline:0;
 }
 
-.feedback-input:focus { border:2px solid #F29B30; }
+.feedback-input:focus { 
+  border:2px solid #F29B30; 
+  box-shadow: 0 0 4px #ffb20a;
+  background-color: white !important;
+}
+
+.labelInput{
+  background-color: transparent;
+}
 
 textarea {
   height: 150px;
@@ -136,11 +149,11 @@ textarea {
   resize:vertical;
 }
 
-[type="submit"] {
+.btn_enviar {
   width: 100%;
   background:#F29B30;
   border-radius:5px;
-  border:0;
+  border: none;
   cursor:pointer;
   color:#fff;
   font-size:24px;
@@ -150,7 +163,10 @@ textarea {
   margin-top:-4px;
   font-weight:700;
 }
-[type="submit"]:hover { background:#eee; color: #F29B30; }
+.btn_enviar:hover { 
+  background:#ff9e29; 
+  color: #fff;
+}
 
 #correojava{
   opacity: 0;

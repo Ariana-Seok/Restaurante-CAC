@@ -62,55 +62,58 @@
     </nav>
 
     <main>
-        <section class="seccion_contacto my-5">
+        <section class="seccion_contacto my-3">
             <!-- ***** Contacto***** --> 
             <h2 class="display-4 fw-bolder text-center mb-5">Contacto</h2>
-            <div class="container ">
+            
+            <div class="container contenedor_form">
+                <div class="alerta_exito"></div>
                 <div class="row row_reverse p-2">
                     <div class="col-md-6 contenedor_consulta">
                         <h4 class="lead fw-bolder mb-4 mt-2 ">Envianos tu consulta.</h4>
-                        <p class="lead mb-5 justify-content-center">Ahora podrás solicitar información y recibir orientación 
+                        <p class="lead mb-5 justify-content-center fs-5">Ahora podrás solicitar información y recibir orientación 
                             personalizada. Podés hacerlo a través del <span class="fw-medium">teléfono +54 234 567 890</span> o dejandonos tu mensaje abajo:</p>     
                     
                         <!-- ***** Formulario de Contacto *****  -->
 
-                        <form action="#" id="form" class="w-100">
+                        <form id="form" class="w-100">
                             <div class="row">
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" name="nombre" class="form-control feedback-input" id="nombre" placeholder="Nombre" required>
+                                <div class="form-floating col-md-6 contenedorInputNombre mb-3">
+                                    <input type="text" name="nombre" class="form-control feedback-input pl-3" id="nombre" placeholder="Nombre">
+                                    <label for="nombre" class="mx-3 labelInput">Nombre</label>
                                 </div>
-                                <div class="col-md-6 mb-3">
-                                    <input type="text" name="apellido" class="form-control feedback-input" id="apellido" placeholder="Apellido" required>
+                                <div class="form-floating col-md-6 contenedorInputApellido mb-3">
+                                    <input type="text" name="apellido" class="form-control feedback-input pl-3" id="apellido" placeholder="Apellido">
+                                    <label for="nombre" class="mx-3 labelInput">Apellido</label>
                                 </div>
-                                <div class="col-md-12 mb-3">
-                                    <input type="text" name="email" class="form-control feedback-input" id="email" placeholder="Email" required pattern="[^ @]*@[^ @]*">
+                                <div class="form-floating col-md-12 contenedorInputEmail mb-3">
+                                    <input type="text" name="email" class="form-control feedback-input pl-3" id="email" placeholder="Email">
+                                    <label for="nombre" class="mx-3 labelInput">Email</label>
                                 </div>
                             </div>
         
-                            <div class="mb-3">
-                                <select class="form-control feedback-input" id="temaMensaje" name="temaMensaje" required>
-                                    <option>Asunto</option>
+                            <div class="form-floating contenedorSelectAsunto mb-3">
+                                <select class="form-select feedback-input" id="asunto" name="asunto">
+                                    <option selected>Elija una opcion de asunto</option>
                                     <option value="consulta">Consulta</option>
                                     <option value="reservacion">Reservación</option>
                                     <option value="comida">Comida</option>
                                 </select>
+                                <label for="asunto" class="pb-2">Asunto</label>
                             </div>
-                    
-                            <div class="mb-3">
-                                <textarea class="form-control textarea-custom-height feedback-input" id="charla" placeholder="Escribe un mensaje..." required></textarea>
-                                <p class="form-text text-muted text-start">Recuerda incluir un título para tu charla.</p>
+                            
+                            <div class="contenedorMensaje mb-3">
+                                <textarea class="form-control textarea-custom-height feedback-input" id="mensaje" placeholder="Escribe un mensaje..."></textarea>
                             </div>
                                 
-                            <div class="mb-3">
+                            <div class="contenedorCheckbox">
                                 <input type="checkbox" name="terminos" id="terminos" required>
                                 <label for="terminos"> He leído y acepto los <a href="#">términos y condiciones</a>.</label>
                                 <p class="form-text text-muted text-start">Marcar esta casilla es obligatorio para enviar el formulario.</p>
                             </div>
         
-                            <button type="submit" class="btn d-inline w-100 btn-success btn-bg-opacity-60">Enviar</button>
+                            <input type="button" class="btn d-inline w-100 btn_enviar my-4" id="btn_enviar" value="Enviar">
                         </form>
-                        <a href="mailto:*****@gmail.com" id="correojava">mail</a>
-                    
                     </div>
 
                     <div class="col-md-6 contenedor_imagen_contacto p-5">
@@ -119,6 +122,7 @@
                         </div>
                     </div>
                 </div>
+            
             </div>   
         </section>
     </main>
@@ -179,5 +183,7 @@
         <i class="bi bi-whatsapp"></i>
     </a>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script src="../scripts/formulario.js"></script>
 </body>
 </html>
